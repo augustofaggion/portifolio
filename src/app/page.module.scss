@@ -50,7 +50,8 @@
 
 .main code {
   font-family: inherit;
-  background: var(--gray-alpha-100);
+  background: var(
+  --gray-alpha-100);
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
@@ -160,6 +161,6 @@ a.secondary {
 
 @media (prefers-color-scheme: dark) {
   .logo {
-    filter: invert();
+    filter: invert(100%);
   }
 }
