@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 
-export default function Nabar() {
+export default function App() {
   return (
     <nav>
       <ul className={styles.navbar}>
