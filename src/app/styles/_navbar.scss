@@ -1,35 +1,56 @@
+// navbar.scss
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 2rem;
-  font-size: 1.6em;
+  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: 1rem 5rem;
 
-
-  .logo {
-    margin-right: 50rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
-  .navItems {
+
+  &__items {
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    align-items: center;
+    width: 100%;
   }
-}
 
+  &__link{
+    margin: 0 1rem;
+    }
 
+    &__menu-icon {
+      display: none;  // hide the menu icon on desktop
+    }
 
-// Responsive Navbar
-.open, .close {
-  display: none;
-}
+    @media screen and (max-width: 1000px) {
+      &__menu-icon {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        width: 100%; // show the menu icon on mobile
+      }
 
+      &__items {
+        display: none;  // hide the menu on mobile
+      }
 
-@media screen and (max-width: 1068px) {
-  .navbar {
-   
-    .open {
-      display: block;
+      &__items--open {
+        display: flex;  // show the menu on mobile
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1;
+      }
     }
   }
-
-}
