@@ -3,7 +3,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
-  font-size: 1.8rem;
+  font-size: 1.6em;
 
 
   .logo {
@@ -12,6 +12,24 @@
   .navItems {
     display: flex;
     justify-content: space-around;
-    gap: 5rem;
+    gap: 2rem;
   }
+}
+
+
+
+// Responsive Navbar
+.open, .close {
+  display: none;
+}
+
+
+@media screen and (max-width: 1068px) {
+  .navbar {
+   
+    .open {
+      display: block;
+    }
+  }
+
 }
