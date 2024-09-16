@@ -1,0 +1,23 @@
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  // Headers
+  &__header--primary {
+    font-size: 4.8rem;
+  }
+
+  &__header--secondary {
+    font-size: 3.6rem;
+    padding: 2.4rem;
+  }
+
+  &__header--terciary {
+    font-size: 2.4rem;
+  }
+  // Left
+  &__left {
+    text-align: center;
+  }
+}
