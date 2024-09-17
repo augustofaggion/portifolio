@@ -1,6 +1,40 @@
 .project {
 
+  &__header {
+    font-size: 3.6rem;
+  }
+
   &__box {
-    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3.6rem 0;
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1.8rem;
+    max-width: 300px;
+    gap: 1rem;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+
+  // Header
+  &__header {
+    font-size: 1.6rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  &__link {
+    padding: 1rem 2rem;
   }
 }
