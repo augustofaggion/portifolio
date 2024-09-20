@@ -35,7 +35,7 @@ export default function Project() {
         {projects.map((project) => (
           <div key={project.id} className="project__content">
             <Image src={project.image} alt={project.title} width={350} height={200} />
-            <h3 className="project__header">{project.title}</h3>
+            <h3 className="project__title">{project.title}</h3>
             <p className="project__text">{project.description}</p>
                 <div >
                 <a className="project__link" href={project.linkGit} target="_blank" rel="noopener noreferrer">
