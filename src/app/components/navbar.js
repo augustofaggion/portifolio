@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar container">
+    <nav className="navbar ">
       <div className="navbar__container">
         <a href="/" className="navbar__logo">Augusto</a>
 

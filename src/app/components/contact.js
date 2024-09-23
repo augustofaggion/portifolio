@@ -1,20 +1,22 @@
 import Image from "next/image";
 // import PhotoBild from "../images/home.svg";
-import { Menu} from 'lucide-react';
+import contact from "../images/contact.png";
 
 export default function Contact() {
   return (
-    <section className="project container">
+    <section className="contact container">
       <h1>Contact</h1>
-      <div class="project__box">
-        <Image alt="testing"/>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ex
-          perferendis praesentium, tempore aut earum pariatur repudiandae at.
-          Cupiditate ullam iure veniam et voluptatibus impedit non voluptatem
-          ratione ipsum explicabo!
-        </p>
-        <Menu size={24} />
+      <div class="contact__box">
+        <Image src={contact} alt="testing"/>
+        <div class="contact_inputs">
+          <form>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+          </form>
+        </div>
       </div>
     </section>
   );

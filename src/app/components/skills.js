@@ -12,6 +12,12 @@ import sql from "../images/skills/sql.svg";
 import git from "../images/skills/git.svg";
 import figma from "../images/skills/figma.svg";
 
+// Links for certifications
+import certfication1 from "../images/certifications/test1.png";
+import certfication2 from "../images/certifications/test1.png";
+import certfication3 from "../images/certifications/test1.png";
+
+
 // Skills data
 const skills = [
   { id: 1, laguage: "Javascript", logo: javascript },
@@ -27,22 +33,60 @@ const skills = [
   { id: 11, language: "Figma", logo: figma },
 ];
 
+// Skills components
+
+function SkillItem({ skill }) {
+  return (
+    <div key={skill.id} className="skills_content">
+            <Image
+              src={skill.logo}
+              alt={skill.language}
+              width={50}
+              height={50}
+            />
+            <p className="skill__text">{skill.laguage}</p>
+        </div>
+  );
+}
+
+// Certifications data^
+const certifications = [
+  { id: 1, laguage: "IBM", logo: certfication1 },
+  { id: 2, laguage: "IBM", logo: certfication2 },
+  { id: 3, laguage: "IBM", logo: certfication3 },
+];
+
+
+// Certificaton components
+
+function CertificationItem({ certification }) {
+  return (
+    <div key={certification.id} className="certification_content">
+            <Image
+              src={certification.logo}
+              alt={certification.language}
+              width={50}
+              height={50}
+            />
+
+        </div>
+  );
+}
 export default function Skills() {
   return (
     <section className="skills container">
       <h2 className="skills_name">Skills</h2>
       <div class="skills__box">
         {skills.map((skill) => (
-          <div key={skill.id} className="skills_content">
-            <Image
-              src={skill.logo}
-              alt={skill.language}
-              width={300}
-              height={300}
-            />
-            <p className="skill__text">{skill.laguage}</p>
-          </div>
+          <SkillItem key={skill.id} skill={skill} />
         ))}
+      </div>
+      <div class="certifications">
+        <h2 className="certification__name">Certified by</h2>
+        {certifications.map((certification) => (
+          <CertificationItem key={certification.id} certification={certification}/>
+        ))}
+
       </div>
     </section>
   );
