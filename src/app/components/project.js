@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 // import PhotoBild from "../images/home.svg";
 import ProjectBild from "../images/testing-img.jpg";
@@ -29,7 +30,7 @@ const projects = [{
 
 export default function Project() {
   return (
-    <section className="project container">
+    <section className="project ">
       <h2 className="project__header">Project</h2>
       <div className="project__box">
         {projects.map((project) => (

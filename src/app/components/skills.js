@@ -20,16 +20,16 @@ import certfication3 from "../images/certifications/test1.png";
 
 // Skills data
 const skills = [
-  { id: 1, laguage: "Javascript", logo: javascript },
-  { id: 2, laguage: "Ruby", logo: ruby },
-  { id: 3, laguage: "React", logo: react },
-  { id: 4, laguage: "Ruby on Rails", logo: rails },
-  { id: 5, laguage: "HTML", logo: html },
-  { id: 6, laguage: "CSS", logo: css },
-  { id: 7, laguage: "SASS", logo: sass },
-  { id: 8, laguage: "Bootstrap", logo: bootstrap },
-  { id: 9, laguage: "PostgreSQL", logo: sql },
-  { id: 10, laguage: "Git", logo: git },
+  { id: 1, language: "Javascript", logo: javascript },
+  { id: 2, language: "Ruby", logo: ruby },
+  { id: 3, language: "React", logo: react },
+  { id: 4, language: "Ruby on Rails", logo: rails },
+  { id: 5, language: "HTML", logo: html },
+  { id: 6, language: "CSS", logo: css },
+  { id: 7, language: "SASS", logo: sass },
+  { id: 8, language: "Bootstrap", logo: bootstrap },
+  { id: 9, language: "PostgreSQL", logo: sql },
+  { id: 10, language: "Git", logo: git },
   { id: 11, language: "Figma", logo: figma },
 ];
 
@@ -44,16 +44,16 @@ function SkillItem({ skill }) {
               width={50}
               height={50}
             />
-            <p className="skill__text">{skill.laguage}</p>
+            <p className="skill__text">{skill.language}</p>
         </div>
   );
 }
 
 // Certifications data^
 const certifications = [
-  { id: 1, laguage: "IBM", logo: certfication1 },
-  { id: 2, laguage: "IBM", logo: certfication2 },
-  { id: 3, laguage: "IBM", logo: certfication3 },
+  { id: 1, language: "IBM", logo: certfication1 },
+  { id: 2, language: "IBM", logo: certfication2 },
+  { id: 3, language: "IBM", logo: certfication3 },
 ];
 
 
@@ -74,19 +74,20 @@ function CertificationItem({ certification }) {
 }
 export default function Skills() {
   return (
-    <section className="skills container">
+    <section className="skills">
+      <div className="skills__content">
       <h2 className="skills_name">Skills</h2>
       <div class="skills__box">
         {skills.map((skill) => (
           <SkillItem key={skill.id} skill={skill} />
         ))}
       </div>
-      <div class="certifications">
         <h2 className="certification__name">Certified by</h2>
+      <div className="certifications">
         {certifications.map((certification) => (
           <CertificationItem key={certification.id} certification={certification}/>
         ))}
-
+      </div>
       </div>
     </section>
   );

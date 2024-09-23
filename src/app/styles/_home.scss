@@ -1,3 +1,4 @@
+@import 'variables';
 .home {
   display: flex;
   justify-content: space-around;
@@ -20,4 +21,14 @@
   &__left {
     text-align: center;
   }
+
+  // Call for action
+  // ADD call for action here
+  // &__cta {
+  //   width: 5rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-top: 3.4rem;
+  //   border: 1px solid $cta-color;
+  // }
 }

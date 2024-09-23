@@ -18,6 +18,7 @@ export default function Home() {
         </h1>
         <h2 className="home__header--secondary">Fullstack Developer</h2>
         <h3 className="home__header--terciary">Empowering your digital sucess with innovative solutions</h3>
+      <a href="" className="home__cta">Contact me</a>
       </div>
 
       <div className="home__right">

@@ -53,7 +53,7 @@
       &__items--open {
         display: flex;  // show the menu on mobile
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 10%;
         left: 0;
         width: 100%;

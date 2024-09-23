@@ -1,13 +1,14 @@
+@import "variables";
 .project {
-
-
+  background-color: $section-color;
+  margin: 5rem 0;
+  padding: 5rem;
 
   &__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 3.6rem 0;
-
   }
 
   &__content {
@@ -20,6 +21,8 @@
     gap: 1rem;
     border: 1px solid black;
     overflow: hidden;
+    box-shadow: 10px 15px 5px 0 $secondary-color;
+    border-radius: 1.5rem;
   }
 
   // Header
