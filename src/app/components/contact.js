@@ -4,7 +4,7 @@ import contact from "../images/contact.png";
 
 export default function Contact() {
   return (
-    <section className="contact container">
+    <section className="contact">
       <h1>Contact</h1>
       <div class="contact__box">
         <Image src={contact} alt="testing"/>

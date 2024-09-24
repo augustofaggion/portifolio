@@ -1,12 +1,13 @@
+"use client";
 import Image from "next/image";
 // import PhotoBild from "../images/home.svg";
-import Avatar from "../images/hello.png";
+import aboutPhoto from "../images/about-img.svg";
 
 export default function About() {
   return (
-    <section className="about container">
-      <h1 className="about__header">About me</h1>
-      <div className="about__box">
+    <section className="about">
+      <h2 className="about__header container">About me</h2>
+      <div className="about__box container">
         <div className="about__left">
           <p className="about__text">
             With a passion for technology and a knack for problem-solving, I
@@ -23,9 +24,10 @@ export default function About() {
           </p>
         </div>
         <div className="about__right">
-          <Image className="about__img" src={Avatar} alt="Augusto Santos" />
+          <Image className="about__img" src={aboutPhoto} alt="Augusto Santos" />
         </div>
       </div>
+      <hr className="about__line"/>
     </section>
   );
 }

@@ -1,6 +1,8 @@
+@import "variables";
 .about {
-
-
+  background-color: $cta-color;
+  width: 100vw;
+  overflow-x: hidden;
 
 &__box {
   display: flex;
@@ -13,21 +15,31 @@
 }
 &__header {
   font-size: 3.6rem;
+  color: $section-color;
+  text-shadow: $third-color;
 }
 
 &__left {
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 &__text {
   font-size: 1.8rem;
-  line-height: 1.5;
-
+  line-height: 1.8;
+  color: $section-color;
+  padding: 1.5rem;
+  font-weight: 500;
 }
 &__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+&__line {
+  width: 80%;
+  height: 1px;
+  background-color: $border-color;
+  margin: 0 auto; 
 }
 }
