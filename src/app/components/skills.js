@@ -37,7 +37,7 @@ const skills = [
 
 function SkillItem({ skill }) {
   return (
-    <div key={skill.id} className="skill_content">
+    <div key={skill.id} className="skill__content">
             <Image
               src={skill.logo}
               alt={skill.language}
@@ -68,7 +68,7 @@ function CertificationItem({ certification }) {
               width={50}
               height={50}
             />
-
+      
         </div>
   );
 }
@@ -76,13 +76,13 @@ export default function Skills() {
   return (
     <section className="skills">
       <div className="skills__content">
-      <h2 className="skills_name">Skills</h2>
-      <div class="skills__box">
+      <h3 className="skills__header">Skills</h3>
+      <div class="skills__box container">
         {skills.map((skill) => (
           <SkillItem key={skill.id} skill={skill} />
         ))}
       </div>
-        <h2 className="certification__name">Certified by</h2>
+        <h2 className="certifications__header">Certified by</h2>
       <div className="certifications">
         {certifications.map((certification) => (
           <CertificationItem key={certification.id} certification={certification}/>

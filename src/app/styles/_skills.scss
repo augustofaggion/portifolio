@@ -1,45 +1,85 @@
-@import 'variables';
+@import "variables";
 
 .skills {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: $cta-color;
   color: $third-color;
-  font-weight: bold;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  &__header {
+    font-size: 2.4rem;
+    color: $section-color;
+    text-shadow: $third-color;
+    margin-top: 2rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.skill {
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem; // Ensure the content is stacked vertically
+    flex-wrap: wrap;
+    background-color: $third-color;
+    box-shadow: 10px 15px 5px 0 $secondary-color;
+    transition: ease-in-out 0.5s;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    width: 15rem;
+    height: 12rem;
+    &:hover {
+      background-color: $highlight-color;
+      box-shadow: none;
+    }
+
+    &:hover .skill__text {
+      color: $third-color;
+    }
   }
-
-  &__box, .certifications {
-    display: flex;
-    flex-direction: row; // Display items in a row
-    flex-wrap: wrap; // Allow items to wrap to the next line if they overflow
-    gap: 16px; // Adjust the gap between items as needed
-    background-color: $border-color; // Adjust the gap between items as needed
-  }
-
-
-}
-
-.skill{
 
   &__text {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.2rem;
+    color: $section-color;
+    padding: 1rem;
+    font-weight: 600;
+    transition: ease-in-out 0.5s;
   }
 }
 
-.skill-item, .certification-item {
+.certifications {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%; // Ensure the items take up the full width of their container
 
+  &__header {
+    font-size: 2.4rem;
+    color: $section-color;
+    text-shadow: $third-color;
+    margin-top: 2rem;
+  }
 }
