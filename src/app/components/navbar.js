@@ -23,7 +23,7 @@ export default function Navbar() {
 
       {/* Nav items - hide/show based on state */}
       <div className={`navbar__items ${isOpen ? 'navbar__items--open' : ''}`}>
-        <a href="/home" className="navbar__link">Home</a>
+        <a href="#home" className="navbar__link">Home</a>
         <a href="/projects" className="navbar__link">Projects</a>
         <a href="/about" className="navbar__link">About me</a>
         <a href="/skills" className="navbar__link">Skills</a>
