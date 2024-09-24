@@ -37,7 +37,7 @@ const skills = [
 
 function SkillItem({ skill }) {
   return (
-    <div key={skill.id} className="skills_content">
+    <div key={skill.id} className="skill_content">
             <Image
               src={skill.logo}
               alt={skill.language}

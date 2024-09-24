@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Phone} from 'lucide-react';
 export default function Footer() {
   return (
     <section className="footer container">
-      <div class="footer__box">
+      <div className="footer__box">
         <Github />
       <Linkedin />
       <Mail />

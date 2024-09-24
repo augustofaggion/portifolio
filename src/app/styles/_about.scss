@@ -1,4 +1,8 @@
 .about {
+
+
+
+&__box {
   display: flex;
 
   align-items: center;
@@ -6,7 +10,7 @@
 
   color: #333;
   font-family: 'Roboto', sans-serif;
-
+}
 &__header {
   font-size: 3.6rem;
 }

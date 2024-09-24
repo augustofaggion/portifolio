@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
-import PhotoBild from "../images/home.svg";
+import homePhoto from "../images/programming-home.svg";
 
 export default function Home() {
   const name = "I'm Augusto Santos";
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="home__right">
-          <Image src={PhotoBild} alt="Augusto Santos" />
+          <Image src={homePhoto} alt="Augusto Santos" />
         </div>
       </section>
     </>

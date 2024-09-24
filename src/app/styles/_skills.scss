@@ -1,4 +1,9 @@
 @import 'variables';
+
+.project{
+
+
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -18,12 +23,14 @@
     flex-direction: row; // Display items in a row
     flex-wrap: wrap; // Allow items to wrap to the next line if they overflow
     gap: 16px; // Adjust the gap between items as needed
+    background-color: $border-color; // Adjust the gap between items as needed
   }
 
 
 }
 
 .skill{
+
   &__text {
     display: flex;
   justify-content: center;

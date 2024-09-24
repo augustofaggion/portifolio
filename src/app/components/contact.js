@@ -8,7 +8,7 @@ export default function Contact() {
       <h1>Contact</h1>
       <div class="contact__box">
         <Image src={contact} alt="testing"/>
-        <div class="contact_inputs">
+        <div className="contact_inputs">
           <form>
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
