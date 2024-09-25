@@ -13,9 +13,9 @@ import git from "../images/skills/git.svg";
 import figma from "../images/skills/figma.svg";
 
 // Links for certifications
-import certfication1 from "../images/certifications/test1.png";
-import certfication2 from "../images/certifications/test1.png";
-import certfication3 from "../images/certifications/test1.png";
+// import certfication1 from "../images/certifications/test1.png";
+// import certfication2 from "../images/certifications/test1.png";
+// import certfication3 from "../images/certifications/test1.png";
 
 
 // Skills data
@@ -50,28 +50,28 @@ function SkillItem({ skill }) {
 }
 
 // Certifications data^
-const certifications = [
-  { id: 1, language: "IBM", logo: certfication1 },
-  { id: 2, language: "IBM", logo: certfication2 },
-  { id: 3, language: "IBM", logo: certfication3 },
-];
+// const certifications = [
+//   { id: 1, language: "IBM", logo: certfication1 },
+//   { id: 2, language: "IBM", logo: certfication2 },
+//   { id: 3, language: "IBM", logo: certfication3 },
+// ];
 
 
-// Certificaton components
+// // Certificaton components
 
-function CertificationItem({ certification }) {
-  return (
-    <div key={certification.id} className="certification_content">
-            <Image
-              src={certification.logo}
-              alt={certification.language}
-              width={50}
-              height={50}
-            />
-      
-        </div>
-  );
-}
+// function CertificationItem({ certification }) {
+//   return (
+//     <div key={certification.id} className="certification_content">
+//             <Image
+//               src={certification.logo}
+//               alt={certification.language}
+//               width={50}
+//               height={50}
+//             />
+
+//         </div>
+//   );
+// }
 export default function Skills() {
   return (
     <section className="skills">
@@ -82,12 +82,13 @@ export default function Skills() {
           <SkillItem key={skill.id} skill={skill} />
         ))}
       </div>
-        <h2 className="certifications__header">Certified by</h2>
+      {/* Add this section when you have all the certifications */}
+        {/* <h2 className="certifications__header">Certified by</h2>
       <div className="certifications">
         {certifications.map((certification) => (
           <CertificationItem key={certification.id} certification={certification}/>
         ))}
-      </div>
+      </div> */}
       </div>
     </section>
   );
