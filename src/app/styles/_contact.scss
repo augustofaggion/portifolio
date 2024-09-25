@@ -16,28 +16,26 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    max-width: 1200px; // Set a max-width for the container
-    margin: 0 auto; // Center the box
+    max-width: 1200px;
+    margin: 0 auto;
 
     &__img {
-      position: relative; // Needed for the Image component to fill
-      width: 50%; // Set width of the image container
-      height: 30rem; // Set a specific height
-      overflow: hidden; // Ensure the image doesn't overflow
-      border-radius: 1rem; // Optional: Rounded corners for the image
+      position: relative;
+      width: 50%;
+      height: 30rem;
+      overflow: hidden;
+      border-radius: 1rem;
     }
 
     &__inputs {
-      width: 50%; // Set width of the form container
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; // Align items to start for better readability
+      align-items: center;
       gap: 1rem;
       margin-top: 3rem;
     }
-
-
   }
 
   form {
@@ -50,16 +48,17 @@
     margin-bottom: 3rem;
     font-size: 1.4rem;
     border-radius: 1rem;
-    border: 1px solid $border-color; // Optional: Add a border
-    transition: border 0.3s; // Smooth transition for the border
+    border: 1px solid $border-color;
+    transition: border 0.3s;
 
     &:focus {
-      border-color: $highlight-color; // Change border color on focus
-      outline: none; // Remove default outline
+      border-color: $highlight-color;
+      outline: none;
     }
   }
 
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     font-size: 1.4rem;
   }
 
@@ -70,31 +69,32 @@
     margin-bottom: 3rem;
     border-radius: 1rem;
     font-size: 1.4rem;
-    border: 1px solid $border-color; // Optional: Add a border
-
+    border: 1px solid $border-color;
     &:focus {
-      border-color: $highlight-color; // Change border color on focus
-      outline: none; // Remove default outline
+      border-color: $highlight-color;
+      outline: none;
     }
   }
 
   &__button-container {
     display: flex;
-    justify-content: center; // Center the button horizontally
-    width: 100%; // Ensure the container takes full width
+    justify-content: center;
+    width: 100%;
   }
 
   &__button {
     padding: 1rem 4rem;
     font-size: 1.8rem;
     cursor: pointer;
-    background-color: $cta-color; // Set a background color
-    color: #fff; // Set button text color
-    border: none; // Remove default border
-    border-radius: 1rem; // Rounded corners
-
+    background-color: $cta-color;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 10px 15px 5px 0 $secondary-color;
+    transition: ease-in-out 0.5s;
     &:hover {
-      background-color: $highlight-color; // Change color on hover
+      background-color: $highlight-color;
+      box-shadow: none;
     }
   }
 }
