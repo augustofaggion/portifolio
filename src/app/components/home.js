@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="home__right">
-          <Image src={homePhoto} alt="Augusto Santos" />
+          <Image src={homePhoto} alt="Augusto Santos" className="home__img"/>
         </div>
       </section>
     </>

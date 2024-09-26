@@ -82,3 +82,10 @@ ul {
     color-scheme: dark;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  html,body {
+    font-size: 45%;
+  }
+
+}

@@ -40,6 +40,22 @@
   width: 80%;
   height: 1px;
   background-color: $border-color;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
+}
+
+@media screen and (max-width:1200px) {
+  .about {
+    &__img  {
+      width: 80%;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $section-color;
+      padding: 1.2rem;
+      font-weight: 500;
+    }
+  }
 }

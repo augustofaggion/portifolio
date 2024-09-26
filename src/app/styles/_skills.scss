@@ -10,7 +10,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -73,7 +72,34 @@
   }
 }
 
-// Add this section when you have all the certifications 
+// Responsive design
+
+@media screen and (max-width: 1200px) {
+
+    .skills__content{
+       // Center align text and icons
+    }
+
+    .skills__box {
+      gap: 1rem;  // Adjust spacing between elements
+    }
+
+    .skill__content {
+      width: 100%;  // Make each skill content take full width
+      max-width: 15rem;  // Restrict max width so it doesn't stretch too much
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: row;  // Stack items vertically
+      align-items: center;  // Add vertical space between items
+    }
+
+    .skill__text {
+      text-align: center;  // Center text within each skill box
+    }
+
+}
+
+// Add this section when you have all the certifications
 
 // .certifications {
 //   display: flex;

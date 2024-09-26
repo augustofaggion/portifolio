@@ -1,7 +1,7 @@
 @import "variables";
 .project {
   background-color: $section-color;
-  
+
   padding: 5rem;
 
   &__box {
@@ -87,24 +87,58 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .project {
+    padding: 2rem; // Reduce padding for smaller screens
 
-// &__cta {
-//   width: 20rem;
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 3.4rem;
-//   padding: 1rem 2rem;
-//  border-radius: 1.5rem;
-//   background-color: $cta-color;
-//   font-size: 2.4rem;
-//   box-shadow: 10px 1510 5px 0 $secondary-color;
-//   transition: ease-in-out 0.5s;
-//   &:hover {
-//     background-color: $secondary-color;
-//     box-shadow: none;
-//   }
-// }
+    &__box {
+      
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
 
-// &__btn {
-//   color: $section-color;
-// }
+    &__content {
+      width: 80%;  // Allow content to take full width
+      max-width: 40rem;  // Reduce the max-width to make it smaller
+      margin: 1rem 0;  // Less margin between boxes
+      padding: 0;  // Reduce padding inside the box
+      box-shadow: 5px 10px 3px 0 $secondary-color;  // Adjust box shadow for smaller screens
+      transition: ease-in-out 0.3s;  // Make the transition faster for smaller screens
+
+      &:hover {
+        box-shadow: 3px 5px 2px 0 $secondary-color;  // Adjust hover effect for smaller screens
+      }
+    }
+
+    &__links {
+      justify-content: center;  // Center align the links
+      gap: 0.8rem;  // Reduce gap between links
+    }
+
+    &__link {
+      padding: 0.6rem 1.2rem;  // Make link padding smaller
+      font-size: 0.9rem;  // Slightly reduce font size
+    }
+
+    span {
+      font-size: 1rem;  // Decrease font size for smaller screens
+      padding: 0.8rem;
+    }
+
+    // Adjust header and text sizes for responsiveness
+    &__header {
+      font-size: 2.4rem;
+    }
+
+    &__title {
+      font-size: 1.6rem;  // Smaller font size for titles
+    }
+
+    &__text {
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  }
+}

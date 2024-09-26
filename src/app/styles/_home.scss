@@ -44,3 +44,15 @@
     font-weight: 600;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .home {
+    align-items: center;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+
+}
