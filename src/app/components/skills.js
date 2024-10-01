@@ -43,6 +43,7 @@ function SkillItem({ skill }) {
               alt={skill.language}
               width={50}
               height={50}
+              className="skill__logo"
             />
             <p className="skill__text">{skill.language}</p>
         </div>

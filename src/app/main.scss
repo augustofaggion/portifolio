@@ -89,3 +89,18 @@ ul {
   }
 
 }
+
+@media screen and (max-width: 970px) {
+  html,body {
+    font-size: 40%;
+  }
+
+}
+
+@media screen and (max-width: 415px) {
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
