@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className="navbar ">
       <div className="navbar__container">
-        <a href="/" className="navbar__logo">Augusto</a>
+        <a href="/" className="navbar__logo">AS</a>
 
         {/* Toggle menu button */}
         <div className="navbar__menu-icon" onClick={toggleNavbar}>
