@@ -1,10 +1,13 @@
 @import 'variables';
 .home {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 50vh;
 
   // Headers
+
   &__header--primary {
     font-size: 3.8rem;
     text-shadow: 1px 1px 1px $border-color;
@@ -19,6 +22,10 @@
   &__header--terciary {
     font-size: 2.4rem;
     text-shadow: 1px 1px 1px $border-color;
+  }
+
+  &__img {
+    width: 100%;
   }
 
 
@@ -45,27 +52,69 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .home {
-    align-items: center;
+// @media screen and (max-width: 1024px) {
+//   .home {
+//     align-items: center;
 
-    &__img {
-      width: 90%;
-    }
+//     &__img {
+//       width: 80%;
+//     }
 
-    &__header--primary {
-      font-size: 3.6rem;
-    }
+//     &__header--primary {
+//       font-size: 3.6rem;
+//     }
 
-    &__header--secondary {
-      font-size: 2.4rem;
+//     &__header--secondary {
+//       font-size: 2.4rem;
 
-    }
+//     }
 
-    &__header--terciary {
-      font-size: 1.8rem;
-    }
-  }
+//     &__header--terciary {
+//       font-size: 1.8rem;
+//     }
+//   }
 
 
-}
+// }
+
+
+// @media screen and (max-width: 768px) {
+//   .home {
+//     align-items: center;
+
+//     &__img {
+//       width: 80%;
+//     }
+
+//     &__header--primary {
+//       font-size: 2.4rem;
+//     }
+
+//     &__header--secondary {
+//       font-size: 1.8rem;
+
+//     }
+
+//     &__header--terciary {
+//       font-size: 1.8rem;
+//     }
+
+//     &__cta {
+//       width: 15rem;
+
+
+//       margin-top: 3.4rem;
+//       padding: 1rem 2rem;
+//      border-radius: 1.5rem;
+//       background-color: $cta-color;
+//       font-size: 1.6rem;
+//       box-shadow: 10px 15px 5px 0 $secondary-color;
+//       transition: ease-in-out 0.5s;
+//       &:hover {
+//         background-color: $secondary-color;
+//         box-shadow: none;
+//       }
+//   }
+
+
+//   }}
